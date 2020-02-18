@@ -1,0 +1,18 @@
+import pandas as pd
+import numpy as np
+import warnings
+import io
+import itertools
+import yaml
+import math
+import matplotlib
+matplotlib.use('TkAgg')
+import maptlotlib.pyplot as plt
+plt.style.use('style_sr15.mplstyle') # figure out what this is, this seems like a good thing to do
+import pyam 
+
+# import scenario data, categorization and specification files
+# metadata has to be generated 
+
+sr1p5 = pyam.IamDataFrame(data='../data/iamc15_scenario_data_world_r1.1.xlsx')
+sr1p5.load_metadata('../data/sr15_metadata_indicators.xlsx')
